@@ -1,0 +1,15 @@
+# Cloud-Sentry .gitignore
+
+# Security
+.env
+
+# Backend
+__pycache__/
+venv/
+env/
+*.pyc
+
+# Frontend
+node_modules/
+dist/
+.DS_Store
