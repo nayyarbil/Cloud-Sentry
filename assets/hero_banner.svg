@@ -1,0 +1,35 @@
+<svg viewBox="0 0 1000 250" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg-rect { fill: #080a0f; }
+    .grid-line { stroke: rgba(255, 255, 255, 0.03); stroke-width: 1; }
+    .title { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 800; letter-spacing: 4px; }
+    .subtitle { fill: #8b949e; font-family: monospace; font-size: 16px; letter-spacing: 1px; }
+    .accent { fill: #388bfd; }
+    .scan-line { fill: url(#scan-gradient); opacity: 0.5; }
+  </style>
+
+  <defs>
+    <linearGradient id="scan-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#388bfd" stop-opacity="0" />
+      <stop offset="90%" stop-color="#388bfd" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.8" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" class="grid-line"/>
+    </pattern>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg-rect" />
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <rect x="-200" y="0" width="200" height="100%" class="scan-line">
+    <animate attributeName="x" values="-200; 1000" dur="4s" repeatCount="indefinite" />
+  </rect>
+
+  <text x="500" y="130" class="title" text-anchor="middle">CLOUD-SENTRY</text>
+  <text x="500" y="165" class="subtitle" text-anchor="middle">DETERMINISTIC THREAT ORCHESTRATION</text>
+  <text x="400" y="185" class="subtitle" text-anchor="right">By : Nayyar Bilal</text>
+  
+  <circle cx="500" cy="50" r="4" class="accent" />
+  <path d="M 450 50 L 550 50" stroke="#388bfd" stroke-width="1" opacity="0.3" />
+</svg>
